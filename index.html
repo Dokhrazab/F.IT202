@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаборатори 06: Оюутны аялал</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <noscript><style>.loader{display:none}</style></noscript>
+</head>
+<body>
+    <!--Achaalah loader-->
+    <div class="loader" id="loader" role="status" aria-label="Achaalj baina"><span class="spinner"></span></div>
+
+    <!--Webiin tolgoi heseg-->
+    <header class="jotaro">
+        <!--Inline SVG logo-->
+        <a class="brand" href="#top">
+            <svg width="36" height="36" viewBox="0 0 36 36" role="img" aria-label="Portalin logo">
+                <rect x="2" y="6" width="32" height="24" rx="5" fill="var(--color-accent)"/>
+                <circle cx="18" cy="18" r="7" fill="none" stroke="#fff" stroke-width="3"/>
+                <circle cx="28" cy="11" r="1.8" fill="#fff"/>
+            </svg>
+            <h1>Oyutnii burtgeliin portal</h1>
+        </a>
+        <!--Gar utasnii tses tovch (desktop deer haragdahgui)-->
+        <button class="menu-toggle" aria-label="Tses neeh">&#9776;</button>
+        <!--Navigation tses (Flexbox)-->
+        <nav id="menu">
+            <ul>
+                <li><a href="../index.html">Nuur</a></li>
+                <li><a href="#">Anket zasah</a></li>
+                <li><a href="#">Tuslamj</a></li>
+                <li><a href="#gallery">Oyutnii aylal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Huudasnii undsen bagtsuud (Grid: undsen kontent + sidebar)-->
+    <div class="layout">
+
+        <!--Undsen kontent-->
+        <main class="Joseph" id="top">
+            <article>
+
+                <!--Kart heleberiin 3 baganatai grid-->
+                <div class="cards">
+                    <section class="font card">
+                        <h2>Minii sonirhol</h2>
+                        <ul>
+                            <li>Web hogjuulelt</li>
+                            <li>Orange halsilah</li>
+                            <li>shudee ugaah</li>
+                        </ul>
+                    </section>
+
+                    <!--Dungiin husnegt-->
+                    <section class="card">
+                        <h2>Minii dun</h2>
+                        <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>hicheel</th>
+                                    <th>Dun</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Web zohiomj</td>
+                                    <td>95</td>
+                                </tr>
+                                <tr>
+                                    <td>Medeelliin san</td>
+                                    <td>88</td>
+                                </tr>
+                                <tr>
+                                    <td>Algorithm</td>
+                                    <td>96</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                    </section>
+
+                    <section class="card">
+                        <h2>Minii zorilgo</h2>
+                        <p>Web hogjuulegch bolj, ooriin biznesee ehluuleh.</p>
+                    </section>
+                </div>
+
+                <!--Oyutnii aylliin gallery (Grid + flip card)-->
+                <section id="gallery">
+                    <h2>Oyutnii aylal</h2>
+                    <p class="hint">Kartiig darj aylliin medeelliig harna uu.</p>
+                    <div class="gallery">
+                        <article class="trip" tabindex="0" aria-label="Huvsgul nuur, medeelel harah" style="--i:0">
+                            <div class="trip-inner">
+                                <figure class="trip-front"><img src="images/Image1.jpg" alt="Baigaliin zurag: Huvsgul nuur" width="400" height="300" loading="lazy"><figcaption>Huvsgul nuur</figcaption></figure>
+                                <div class="trip-back"><h3>Huvsgul nuur</h3><p>Ognoo: <time datetime="2025-07-12">2025-07-12</time></p><p>Gazar: Huvsgul aimag</p></div>
+                            </div>
+                        </article>
+                        <article class="trip" tabindex="0" aria-label="Terelj, medeelel harah" style="--i:1">
+                            <div class="trip-inner">
+                                <figure class="trip-front"><img src="images/Image2.jpg" alt="Baigaliin zurag: Terelj" width="400" height="300" loading="lazy"><figcaption>Terelj</figcaption></figure>
+                                <div class="trip-back"><h3>Terelj</h3><p>Ognoo: <time datetime="2025-08-03">2025-08-03</time></p><p>Gazar: Tuv aimag</p></div>
+                            </div>
+                        </article>
+                        <article class="trip" tabindex="0" aria-label="Gobi, medeelel harah" style="--i:2">
+                            <div class="trip-inner">
+                                <figure class="trip-front"><img src="images/Image3.jpg" alt="Baigaliin zurag: Gobi" width="400" height="300" loading="lazy"><figcaption>Gobi</figcaption></figure>
+                                <div class="trip-back"><h3>Gobi</h3><p>Ognoo: <time datetime="2025-06-21">2025-06-21</time></p><p>Gazar: Omnogobi aimag</p></div>
+                            </div>
+                        </article>
+                        <article class="trip" tabindex="0" aria-label="Orhon huvnii, medeelel harah" style="--i:3">
+                            <div class="trip-inner">
+                                <figure class="trip-front"><img src="images/Image6.jpg" alt="Baigaliin zurag: Orhon huvnii" width="400" height="300" loading="lazy"><figcaption>Orhon huvnii</figcaption></figure>
+                                <div class="trip-back"><h3>Orhon huvnii</h3><p>Ognoo: <time datetime="2025-09-10">2025-09-10</time></p><p>Gazar: Uvurhangai aimag</p></div>
+                            </div>
+                        </article>
+                        <article class="trip" tabindex="0" aria-label="Hustai nuruu, medeelel harah" style="--i:4">
+                            <div class="trip-inner">
+                                <figure class="trip-front"><img src="images/Image7.jpg" alt="Baigaliin zurag: Hustai nuruu" width="400" height="300" loading="lazy"><figcaption>Hustai nuruu</figcaption></figure>
+                                <div class="trip-back"><h3>Hustai nuruu</h3><p>Ognoo: <time datetime="2025-10-01">2025-10-01</time></p><p>Gazar: Tuv aimag</p></div>
+                            </div>
+                        </article>
+                        <article class="trip" tabindex="0" aria-label="Altai, medeelel harah" style="--i:5">
+                            <div class="trip-inner">
+                                <figure class="trip-front"><img src="images/Image20.jpg" alt="Baigaliin zurag: Altai" width="400" height="300" loading="lazy"><figcaption>Altai</figcaption></figure>
+                                <div class="trip-back"><h3>Altai</h3><p>Ognoo: <time datetime="2025-07-28">2025-07-28</time></p><p>Gazar: Bayan-Olgii aimag</p></div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!--Bogino video (captions)-->
+                <section id="video">
+                    <h2>Bogino video</h2>
+                    <video controls preload="metadata" width="640" height="360">
+                        <source src="media/sample.mp4" type="video/mp4">
+                        <track kind="captions" src="media/captions.vtt" srclang="mn" label="Mongol" default>
+                        Tanii hurtun video demjihgui baina.
+                    </video>
+                </section>
+
+                <!--Gazriin zurag (iframe)-->
+                <section id="map">
+                    <h2>Gazriin zurag</h2>
+                    <iframe title="Aylal ehleh gazriin zurag" loading="lazy"
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=106.88%2C47.90%2C106.96%2C47.94&amp;layer=mapnik&amp;marker=47.9186%2C106.9177"></iframe>
+                </section>
+
+                <!--Anketiin heseg-->
+                <section class="form-section">
+                    <h2>Hereglegchiin anket bogloh</h2>
+                    <p>Doorh formiin daguu medeelle unen zov boglo</p>
+
+                    <form action="#" method="POST" enctype="multipart/form-data">
+                        <!--Formiin 2 buleg ni Grid-ээр 2 baganad huvaarilagdana-->
+                        <div class="form-grid">
+
+                            <!-- 1r buleg huviin medeelel-->
+                            <fieldset>
+                                <legend>Huviin medeelel</legend>
+                                <label for="fullname">Ovog ner:</label><br>
+                                <input type="text" id="fullname" name="fullname" placeholder="O.Bazargur" required
+                                minlength="2"><br><br>
+                                <label for="email">tsahim hayg(email)</label><br>
+                                <input type="email" id="email" name="email" placeholder="bzrgurosa@gmail.com"
+                                required><br><br>
+                                <label for="password">Nuuts ug </label><br>
+                                <input type="password" id="password" name="password" required minlength="6"><br><br>
+                                <label for="phone">utasnii dugaar:</label><br>
+                                <input type="tel" id="phone" name="phone" pattern="[0-9]{8}" placeholder="99119911"
+                                required><br><br>
+                                <label>Huis:</label><br>
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">eregtei</label>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">emegtei</label><br>
+                            </fieldset>
+
+                            <!--2r buleg mergejil ba surgaltiin medeelle-->
+                            <fieldset>
+                                <legend>bolovsrol ba sonirhol</legend>
+                                <label for="degree">suraltsaj bui tuvshin</label><br>
+                                <select id="degree" name="degree" required>
+                                    <option value="">-- Songono uu--</option>
+                                    <option value="bakalabr">Bakalavr</option>
+                                    <option value="magistr">Magistr</option>
+                                    <option value="doctor">Porpessor</option>
+                                </select><br><br>
+                                <label>Sonirhoj bga tehnologuud</label><br>
+                                <input type="checkbox" id="php" name="skills" value="PHP">
+                                <label for="php">PHP &amp; MySQL</label><br><br>
+                                <label for="avatar">Profile zurag oruulna uu:</label><br>
+                                <input type="file" id="avatar" name="avatar" accept="image/*"><br><br>
+                                <label for="bio">tovch taniltsuulga/Ooriin tuhai</label><br>
+                                <textarea id="bio" name="bio" rows="4" cols="30" placeholder="Ooriin taniltsuulga end uldeene uu"></textarea><br>
+                            </fieldset>
+                        </div>
+
+                        <!--ilgeeh ba arilgah tovchluuruud (Flexbox)-->
+                        <div class="buttons">
+                            <button type="submit">Anket ilgeeh</button>
+                            <button type="reset">Dahin ehluuleh</button>
+                        </div>
+                    </form>
+                </section>
+
+            </article>
+        </main>
+
+        <!--Hajuu sambar-->
+        <aside class="sidebar">
+            <h3>Zarlal</h3>
+            <ul>
+                <li>Anket bogloh hugatsaa: 10-r sar</li>
+                <li>Web zohiomj hicheeliin lab</li>
+                <li>Shine medee</li>
+            </ul>
+        </aside>
+
+    </div>
+
+    <!--Hol heseg-->
+    <footer>
+        <p>&copy;2026 Web zohiomj hicheel copyrighted</p>
+    </footer>
+
+    <!--Gar utasnii tsesiig neeh/haah-->
+    <script>
+        const btn = document.querySelector(".menu-toggle");
+        const menu = document.getElementById("menu");
+        btn.addEventListener("click", function () {
+            menu.classList.toggle("open");
+        });
+        /* Huudas achaalj duusahad loader-iig nuuj, kartuudiig daraalan gargana */
+        window.addEventListener("load", function () {
+            document.getElementById("loader").classList.add("hidden");
+            document.body.classList.add("loaded");
+        });
+    </script>
+
+</body>
+</html>
